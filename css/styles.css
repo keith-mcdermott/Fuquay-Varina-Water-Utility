@@ -1,0 +1,35 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map-container {
+  position: relative; /* Set the parent container for absolute positioning */
+  height: 100vh; /* Set a specific size for the map */
+  width: 100vw;
+}
+
+#map {
+  position: absolute; /* Allows other elements to overlap */
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#map-title {
+  position: absolute; /* Positions the title relative to #map-container */
+  top: 10px; /* Adjust top/left for desired position */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the title horizontally */
+  z-index: 1; /* Ensures the title is on top of the map */
+  background-color: rgba(255, 255, 255, 0.7); /* Optional: Semi-transparent background for readability */
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-size: 24px;
+}
