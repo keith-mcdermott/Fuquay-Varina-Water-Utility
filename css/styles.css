@@ -33,3 +33,19 @@ body {
   border-radius: 5px;
   font-size: 24px;
 }
+
+
+@media only screen and (max-width: 992px) {
+  #map-title {
+    top:65px;
+    font-size: 16;
+    width: 60%;
+    text-align: center;
+  }
+
+  .maplibregl-ctrl.legend-control {
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+  }
+}
