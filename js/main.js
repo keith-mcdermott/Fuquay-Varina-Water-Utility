@@ -105,7 +105,7 @@ function init() {
 
     loadGeojson('./data/Lines.json', 'water_lines', 'water-lines-layer', 'line');
     loadGeojson('./data/Valves.json', 'valves', 'valves-layer', 'circle');
-    loadGeojson('./data/serviceConnections.json', 'service_connections', 'service-connections-layer', 'circle', false);
+    loadGeojson('./data/ServiceConnections.json', 'service_connections', 'service-connections-layer', 'circle', false);
 
 
     const interactiveLayers = [
@@ -350,3 +350,4 @@ map.on('mousemove', e => {
   map.on('click', 'service-connections-layer', e => showPopup(e, 'service'));
   map.on('click', 'water-lines-layer', e => showPopup(e, 'line'));
 }
+
